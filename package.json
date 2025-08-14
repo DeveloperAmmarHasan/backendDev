@@ -1,0 +1,38 @@
+{
+	"name": "gdrive-clone",
+	"version": "1.0.0",
+	"description": "this is a google drive backend",
+	"keywords": [
+		"google",
+		"gdrive",
+		"clone",
+		"backend"
+	],
+	"license": "ISC",
+	"author": "DeveloperAmmarHasan",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+		"lint": "biome lint --write --verbose",
+		"check": "biome check --write --verbose",
+		"format": "biome format --write --verbose"
+	},
+	"dependencies": {
+		"@supabase/supabase-js": "^2.54.0",
+		"bcrypt": "^6.0.0",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"crypto": "^1.0.1",
+		"dotenv": "^17.2.1",
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"multer": "^2.0.2",
+		"uuid": "^11.1.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.1.4",
+		"nodemon": "^3.1.10"
+	}
+}
